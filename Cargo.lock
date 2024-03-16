@@ -19,6 +19,10 @@ name = "hello_cargo"
 version = "0.1.0"
 
 [[package]]
+name = "hello_world"
+version = "0.1.0"
+
+[[package]]
 name = "loops"
 version = "0.1.0"
 
