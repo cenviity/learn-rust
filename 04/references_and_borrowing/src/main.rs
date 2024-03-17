@@ -3,8 +3,7 @@ fn main() {
 
     let num: &mut i32 = &mut v[2];
 
-    *num += 1;
-    println!("Third element is: {}", *num);
+    let num2: &i32 = &*num;
 
-    println!("Vector is now: {:?}", v);
+    println!("{} {}", *num, *num2);
 }
