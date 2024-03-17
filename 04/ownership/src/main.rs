@@ -1,7 +1,8 @@
 fn main() {
     let first = String::from("Ferris");
-    let full = add_suffix(first);
-    println!("{full}, originally {first}"); // first is now used here
+    let first_clone = first.clone();
+    let full = add_suffix(first_clone);
+    println!("{full}, originally {first}");
 }
 
 fn add_suffix(mut name: String) -> String {
