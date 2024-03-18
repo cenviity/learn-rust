@@ -5,15 +5,15 @@ fn main() {
 
     s.clear();
 
-    println!("the first word is: {}", &s[..word]);
+    println!("the first word is: {}", word);
 }
 
-fn first_word(s: &String) -> usize {
+fn first_word(s: &String) -> &str {
     for (i, item) in s.bytes().enumerate() {
         if item == b' ' {
-            return i;
+            return &s[0..i];
         }
     }
 
-    s.len()
+    &s[..]
 }
