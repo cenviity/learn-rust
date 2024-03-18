@@ -8,12 +8,12 @@ fn main() {
     s.clear();
 }
 
-fn first_word(s: &String) -> &str {
+fn first_word(s: &str) -> &str {
     for (i, item) in s.bytes().enumerate() {
         if item == b' ' {
             return &s[0..i];
         }
     }
 
-    &s[..]
+    &s
 }
