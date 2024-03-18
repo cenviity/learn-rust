@@ -3,9 +3,9 @@ fn main() {
 
     let word = first_word(&s);
 
-    s.clear();
-
     println!("the first word is: {}", word);
+
+    s.clear();
 }
 
 fn first_word(s: &String) -> &str {
