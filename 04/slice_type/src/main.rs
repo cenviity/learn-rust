@@ -1,7 +1,11 @@
 fn main() {
-    let s = String::from("hello world");
+    let mut s = String::from("hello world");
 
-    println!("{}", first_word(&s));
+    let word = first_word(&s);
+
+    s.clear();
+
+    println!("the first word is: {}", &s[..word]);
 }
 
 fn first_word(s: &String) -> usize {
