@@ -77,6 +77,8 @@ fn main() {
         height: 0,
     };
 
+    rect.set_width(0);
+
     println!("{}", rect.area());
 
     let other_rect = Rectangle {
