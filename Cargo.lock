@@ -17,6 +17,10 @@ name = "data-types"
 version = "0.1.0"
 
 [[package]]
+name = "defining-enums"
+version = "0.1.0"
+
+[[package]]
 name = "defining-structs"
 version = "0.1.0"
 
