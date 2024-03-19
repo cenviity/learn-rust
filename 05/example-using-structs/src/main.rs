@@ -1,4 +1,4 @@
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 struct Rectangle {
     width: u32,
     height: u32,
