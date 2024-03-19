@@ -20,6 +20,10 @@ impl Rectangle {
         }
     }
 
+    fn set_to_max(&mut self, other: Rectangle) {
+        *self = self.max(other);
+    }
+
     fn width(&self) -> bool {
         self.width > 0
     }
