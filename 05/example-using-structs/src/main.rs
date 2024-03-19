@@ -9,6 +9,10 @@ impl Rectangle {
         self.width * self.height
     }
 
+    fn set_width(&mut self, width: u32) {
+        self.width = width;
+    }
+
     fn width(&self) -> bool {
         self.width > 0
     }
