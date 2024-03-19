@@ -13,6 +13,13 @@ impl Rectangle {
         self.width = width;
     }
 
+    fn max(self, other: Rectangle) -> Rectangle {
+        Rectangle {
+            width: self.width.max(other.width),
+            height: self.height.max(other.height),
+        }
+    }
+
     fn width(&self) -> bool {
         self.width > 0
     }
