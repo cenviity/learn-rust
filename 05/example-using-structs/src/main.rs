@@ -56,4 +56,12 @@ fn main() {
 
     r.set_width(2);
     Rectangle::set_width(&mut r, 2);
+
+    let r = &mut Box::new(Rectangle {
+        width: 1,
+        height: 2,
+    });
+    let area1 = r.area();
+    let area2 = Rectangle::area(&**r);
+    assert_eq!(area1, area2);
 }
