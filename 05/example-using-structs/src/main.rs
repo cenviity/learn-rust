@@ -2,7 +2,6 @@
 struct Rectangle {
     width: u32,
     height: u32,
-    name: String,
 }
 
 impl Rectangle {
@@ -23,7 +22,6 @@ impl Rectangle {
 
     fn set_to_max(&mut self, other: Rectangle) {
         let max = self.max(other);
-        drop(*self); // This is usually implicity, but added here for clarity.
         *self = max;
     }
 
