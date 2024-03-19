@@ -1,3 +1,6 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
 struct User<'a> {
     active: bool,
     username: &'a str,
