@@ -71,4 +71,18 @@ fn main() {
     let area1 = r.area();
     let area2 = Rectangle::area(&**r);
     assert_eq!(area1, area2);
+
+    let rect = Rectangle {
+        width: 0,
+        height: 0,
+    };
+
+    println!("{}", rect.area());
+
+    let other_rect = Rectangle {
+        width: 1,
+        height: 1,
+    };
+
+    let max_rect = rect.max(other_rect);
 }
