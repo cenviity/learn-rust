@@ -72,18 +72,10 @@ fn main() {
     let area2 = Rectangle::area(&**r);
     assert_eq!(area1, area2);
 
-    let mut rect = Rectangle {
+    let rect = Rectangle {
         width: 0,
         height: 0,
     };
-
-    rect.set_width(1);
-
-    let rect_ref = &rect;
-
-    rect_ref.set_width(2);
-
-    println!("{}", rect.area());
 
     let other_rect = Rectangle {
         width: 1,
@@ -91,4 +83,6 @@ fn main() {
     };
 
     let max_rect = rect.max(other_rect);
+
+    println!("{}", rect.area());
 }
