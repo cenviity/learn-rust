@@ -1,18 +1,15 @@
-struct Point {
-    x: i32,
-    y: i32,
-}
-
-fn print_point(p: &Point) {
-    println!("{}, {}", p.x, p.y);
+struct User<'a> {
+    active: bool,
+    username: &'a str,
+    email: &'a str,
+    sign_in_count: u64,
 }
 
 fn main() {
-    let mut p = Point { x: 0, y: 0 };
-
-    let x = &mut p.x;
-
-    print_point(&p);
-
-    *x += 1;
+    let user1 = User {
+        active: true,
+        username: "someusername123",
+        email: "someone@example.com",
+        sign_in_count: 1,
+    };
 }
