@@ -21,7 +21,8 @@ impl Rectangle {
     }
 
     fn set_to_max(&mut self, other: Rectangle) {
-        *self = self.max(other);
+        let max = self.max(other);
+        *self = max;
     }
 
     fn width(&self) -> bool {
@@ -41,52 +42,15 @@ impl Rectangle {
 }
 
 fn main() {
-    let rect1 = Rectangle {
-        width: 30,
-        height: 50,
-    };
-    let rect2 = Rectangle {
-        width: 10,
-        height: 40,
-    };
-    let rect3 = Rectangle {
-        width: 60,
-        height: 45,
-    };
-
-    println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
-    println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
-
-    let mut r = Rectangle {
-        width: 1,
-        height: 2,
-    };
-    let area1 = r.area();
-    let area2 = Rectangle::area(&r);
-    assert_eq!(area1, area2);
-
-    r.set_width(2);
-    Rectangle::set_width(&mut r, 2);
-
-    let r = &mut Box::new(Rectangle {
-        width: 1,
-        height: 2,
-    });
-    let area1 = r.area();
-    let area2 = Rectangle::area(&**r);
-    assert_eq!(area1, area2);
-
-    let rect = Rectangle {
+    let mut rect = Rectangle {
         width: 0,
-        height: 0,
+        height: 1,
     };
 
     let other_rect = Rectangle {
         width: 1,
-        height: 1,
+        height: 0,
     };
 
-    let max_rect = rect.max(other_rect);
-
-    println!("{}", rect.area());
+    rect.set_to_max(other_rect);
 }
