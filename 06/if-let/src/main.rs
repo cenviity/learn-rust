@@ -1,3 +1,6 @@
+#![allow(dead_code)]
+#![allow(unused)]
+
 #[derive(Debug)]
 enum UsState {
     Alabama,
