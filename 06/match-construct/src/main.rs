@@ -2,7 +2,7 @@ fn main() {
     let opt: Option<String> = Some(String::from("Hello world"));
 
     match opt {
-        Some(_) => println!("Some!"),
+        Some(s) => println!("Some: {}", s),
         None => println!("None!"),
     }
 
