@@ -1,4 +1,4 @@
-use crate::front_of_house::hosting;
+pub use crate::front_of_house::hosting;
 
 mod front_of_house {
     pub mod hosting {
