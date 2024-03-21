@@ -2,33 +2,7 @@ pub use crate::front_of_house::hosting;
 
 mod front_of_house;
 
-mod back_of_house {
-    pub struct Breakfast {
-        pub toast: String,
-        seasonal_fruit: String,
-    }
-
-    impl Breakfast {
-        pub fn summer(toast: &str) -> Self {
-            Self {
-                toast: String::from(toast),
-                seasonal_fruit: String::from("peaches"),
-            }
-        }
-    }
-
-    pub enum Appetizer {
-        Soup,
-        Salad,
-    }
-
-    fn fix_incorrect_order() {
-        cook_order();
-        super::deliver_order();
-    }
-
-    fn cook_order() {}
-}
+mod back_of_house;
 
 pub fn eat_at_restaurant() {
     hosting::add_to_waitlist();
