@@ -1,3 +1,5 @@
+#![allow(dead_code, unused_variables)]
+
 pub use crate::front_of_house::hosting;
 
 mod front_of_house;
