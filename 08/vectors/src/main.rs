@@ -1,9 +1,9 @@
 fn main() {
-    let v = vec![1, 2, 3, 4, 5];
+    let v = vec![100, 32, 57];
 
-    let first = &v[0];
-
-    v.push(6);
-
-    println!("The first element is: {first}");
+    for n_ref in &v {
+        // n_ref has type &i32
+        let n_plus_one: i32 = *n_ref + 1;
+        println!("{n_plus_one}");
+    }
 }
