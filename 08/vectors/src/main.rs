@@ -1,7 +1,8 @@
-fn main() {}
+use std::ops::Range;
 
-fn dup_in_place(v: &mut Vec<i32>) {
-    for n_ref in v.iter() {
-        v.push(*n_ref);
-    }
+fn main() {
+    let mut v: Vec<i32> = vec![1, 2];
+    let mut iter: Range<usize> = 0..v.len();
+    let i1: usize = iter.next().unwrap();
+    let n1: &i32 = &v[i1];
 }
