@@ -1,5 +1,5 @@
 [package]
-name = "generic-types-traits-and-lifetimes"
+name = "generic-data-types"
 version = "0.1.0"
 edition = "2021"
 
