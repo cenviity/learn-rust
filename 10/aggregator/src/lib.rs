@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 pub trait Summary {
     fn summarize(&self) -> String;
 }
@@ -27,6 +29,6 @@ impl Summary for Tweet {
     }
 }
 
-pub fn notify<T: Summary>(item1: &T, item2: &T) {
-    println!("Breaking news! {}", item1.summarize());
+pub fn notify(item: &(impl Summary + Display)) {
+    println!("Breaking news! {}", item.summarize());
 }
