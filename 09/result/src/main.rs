@@ -1,13 +1,7 @@
-fn main() {
-    assert_eq!(
-        last_char_of_first_line("Hello, world\nHow are you today?"),
-        Some('d')
-    );
+use std::{error::Error, fs::File};
 
-    assert_eq!(last_char_of_first_line(""), None);
-    assert_eq!(last_char_of_first_line("\nhi"), None);
-}
+fn main() -> Result<(), Box<dyn Error>> {
+    let greeting_file = File::open("hello.txt")?;
 
-fn last_char_of_first_line(text: &str) -> Option<char> {
-    text.lines().next()?.chars().last()
+    Ok(())
 }
