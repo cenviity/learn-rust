@@ -105,6 +105,10 @@ name = "match-construct"
 version = "0.1.0"
 
 [[package]]
+name = "minigrep"
+version = "0.1.0"
+
+[[package]]
 name = "ownership"
 version = "0.1.0"
 
