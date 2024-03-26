@@ -1,4 +1,4 @@
-fn make_a_cloner(s_ref: &str) -> impl Fn() -> String {
+fn make_a_cloner<'a>(s_ref: &'a str) -> impl Fn() -> String + 'a {
     move || s_ref.to_string()
 }
 
