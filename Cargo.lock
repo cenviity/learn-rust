@@ -15,6 +15,10 @@ name = "art"
 version = "0.1.0"
 
 [[package]]
+name = "boxes"
+version = "0.1.0"
+
+[[package]]
 name = "branches"
 version = "0.1.0"
 
