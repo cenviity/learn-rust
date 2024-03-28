@@ -1,3 +1,5 @@
+#![allow(dead_code, unused_variables)]
+
 use crate::List::{Cons, Nil};
 
 enum List {
