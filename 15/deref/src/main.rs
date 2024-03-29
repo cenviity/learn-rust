@@ -1,7 +1,9 @@
-fn main() {
-    let x = 5;
-    let y = Box::new(x);
+struct MyBox<T>(T);
 
-    assert_eq!(5, x);
-    assert_eq!(5, *y);
+impl<T> MyBox<T> {
+    fn new(x: T) -> MyBox<T> {
+        MyBox(x)
+    }
 }
+
+fn main() {}
