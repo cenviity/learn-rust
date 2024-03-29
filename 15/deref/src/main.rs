@@ -3,5 +3,5 @@ fn main() {
     let y = &x;
 
     assert_eq!(5, x);
-    assert_eq!(5, *y);
+    assert_eq!(5, y);
 }
