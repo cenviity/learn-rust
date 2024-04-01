@@ -1,3 +1,5 @@
+#![allow(dead_code, unused_variables)]
+
 enum List {
     Cons(i32, Rc<List>),
     Nil,
