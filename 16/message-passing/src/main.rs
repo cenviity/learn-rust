@@ -1,3 +1,5 @@
+use std::sync::mpsc;
+
 fn main() {
-    println!("Hello, world!");
+    let (tx, rx) = mpsc::channel();
 }
