@@ -1,8 +1,7 @@
-fn main() {
-    struct Point {
-        x: i32,
-        y: i32,
-    }
+fn foo(_: i32, y: i32) {
+    println!("This code only uses the y parameter: {}", y);
+}
 
-    let ((feet, inches), Point { x, y }) = ((3, 10), Point { x: 3, y: -10 });
+fn main() {
+    foo(3, 4);
 }
