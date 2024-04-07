@@ -157,6 +157,10 @@ name = "minigrep"
 version = "0.1.0"
 
 [[package]]
+name = "mutable-static-variables"
+version = "0.1.0"
+
+[[package]]
 name = "my-crate"
 version = "0.1.0"
 
