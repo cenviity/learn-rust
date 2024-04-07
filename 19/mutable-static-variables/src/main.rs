@@ -1,3 +1,5 @@
+static HELLO_WORLD: &str = "Hello, world!";
+
 fn main() {
-    println!("Hello, world!");
+    println!("name is: {}", HELLO_WORLD);
 }
