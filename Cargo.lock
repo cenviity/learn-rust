@@ -115,6 +115,10 @@ name = "if-let"
 version = "0.1.0"
 
 [[package]]
+name = "if-let-patterns"
+version = "0.1.0"
+
+[[package]]
 name = "iterators"
 version = "0.1.0"
 
