@@ -24,7 +24,7 @@ fn main() {
                 String::from("Maybe"),
                 String::from("No"),
             ],
-        }),
+        }) as Box<dyn Draw>,
         Box::new(Button {
             width: 50,
             height: 10,
