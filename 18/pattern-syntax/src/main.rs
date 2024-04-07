@@ -1,9 +1,13 @@
 fn main() {
-    let s = Some(String::from("Hello!"));
-
-    if let Some(_) = s {
-        println!("found a string");
+    struct Point {
+        x: i32,
+        y: i32,
+        z: i32,
     }
 
-    println!("{:?}", s);
+    let origin = Point { x: 0, y: 0, z: 0 };
+
+    match origin {
+        Point { x, .. } => println!("x is {}", x),
+    }
 }
