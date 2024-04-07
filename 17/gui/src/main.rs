@@ -15,7 +15,7 @@ impl Draw for SelectBox {
 }
 
 fn main() {
-    let components = vec![
+    let components: Vec<Box<dyn Draw>> = vec![
         Box::new(SelectBox {
             width: 75,
             height: 10,
@@ -24,7 +24,7 @@ fn main() {
                 String::from("Maybe"),
                 String::from("No"),
             ],
-        }) as Box<dyn Draw>,
+        }),
         Box::new(Button {
             width: 50,
             height: 10,
