@@ -269,6 +269,10 @@ name = "strings"
 version = "0.1.0"
 
 [[package]]
+name = "supertrait"
+version = "0.1.0"
+
+[[package]]
 name = "test-organisation"
 version = "0.1.0"
 
