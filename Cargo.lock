@@ -173,6 +173,10 @@ name = "my-crate"
 version = "0.1.0"
 
 [[package]]
+name = "newtype"
+version = "0.1.0"
+
+[[package]]
 name = "object-oriented-characteristics"
 version = "0.1.0"
 
