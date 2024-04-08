@@ -17,5 +17,5 @@ impl Animal for Dog {
 }
 
 fn main() {
-    println!("A baby dog is called a {}", Animal::baby_name());
+    println!("A baby dog is called a {}", <Dog as Animal>::baby_name());
 }
