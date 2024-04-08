@@ -12,4 +12,14 @@ trait OutlinePrint: fmt::Display {
     }
 }
 
-fn main() {}
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+impl OutlinePrint for Point {}
+
+fn main() {
+    let p = Point { x: 1, y: 3 };
+    p.outline_print();
+}
