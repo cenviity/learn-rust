@@ -17,6 +17,12 @@ struct Point {
     y: i32,
 }
 
+impl fmt::Display for Point {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "({}, {})", self.x, self.y)
+    }
+}
+
 impl OutlinePrint for Point {}
 
 fn main() {
