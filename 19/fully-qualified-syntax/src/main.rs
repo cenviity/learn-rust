@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 trait Animal {
     fn baby_name() -> String;
 }
