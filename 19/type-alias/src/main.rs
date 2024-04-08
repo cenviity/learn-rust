@@ -1,8 +1,9 @@
 fn main() {
-    type Kilometers = i32;
+    let f: Box<dyn Fn() + Send + 'static> = Box::new(|| println!("hi"));
 
-    let x: i32 = 5;
-    let y: Kilometers = 5;
+    fn takes_long_type(f: Box<dyn Fn() + Send + 'static>) {}
 
-    println!("x + y = {}", x + y);
+    fn returns_long_type() -> Box<dyn Fn() + Send + 'static> {
+        Box::new(|| ())
+    }
 }
