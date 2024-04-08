@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    type Kilometers = i32;
 }
