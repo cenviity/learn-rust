@@ -73,6 +73,10 @@ name = "for-patterns"
 version = "0.1.0"
 
 [[package]]
+name = "fully-qualified-syntax"
+version = "0.1.0"
+
+[[package]]
 name = "function-parameter-patterns"
 version = "0.1.0"
 
