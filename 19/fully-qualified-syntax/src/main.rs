@@ -28,5 +28,7 @@ impl Wizard for Human {
 
 fn main() {
     let person = Human;
+    Pilot::fly(&person);
+    Wizard::fly(&person);
     person.fly();
 }
