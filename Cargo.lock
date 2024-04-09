@@ -45,6 +45,10 @@ name = "data-types"
 version = "0.1.0"
 
 [[package]]
+name = "declarative-macros"
+version = "0.1.0"
+
+[[package]]
 name = "default-generic-type-parameters"
 version = "0.1.0"
 
