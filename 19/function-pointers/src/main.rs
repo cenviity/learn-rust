@@ -1,8 +1,5 @@
-fn main() {
-    enum Status {
-        Value(u32),
-        Stop,
-    }
-
-    let list_of_statuses: Vec<Status> = (0u32..20).map(Status::Value).collect();
+fn returns_closure() -> dyn Fn(i32) -> i32 {
+    |x| x + 1
 }
+
+fn main() {}
