@@ -69,6 +69,9 @@ impl Worker {
             job();
         });
 
-        Self { id, thread }
+        Self {
+            id,
+            thread: Some(thread),
+        }
     }
 }
