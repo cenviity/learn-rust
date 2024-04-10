@@ -1,4 +1,4 @@
 [workspace]
 members = ["*/*"]
-exclude = [".git", ".vscode", "target", "14/add"]
+exclude = [".git", ".vscode", "target", "14/add", "19/hello-macro"]
 resolver = "2"
