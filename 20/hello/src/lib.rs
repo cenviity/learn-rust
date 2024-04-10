@@ -10,7 +10,7 @@ pub struct ThreadPool {
 
 struct Worker {
     id: usize,
-    thread: thread::JoinHandle<()>,
+    thread: Option<thread::JoinHandle<()>>,
 }
 
 type Job = Box<dyn FnOnce() + Send + 'static>;
