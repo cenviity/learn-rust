@@ -131,6 +131,10 @@ name = "hello-cargo"
 version = "0.1.0"
 
 [[package]]
+name = "hello-macro"
+version = "0.1.0"
+
+[[package]]
 name = "hello-world"
 version = "0.1.0"
 
