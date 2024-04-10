@@ -197,6 +197,10 @@ name = "ownership-recap"
 version = "0.1.0"
 
 [[package]]
+name = "pancakes"
+version = "0.1.0"
+
+[[package]]
 name = "panic"
 version = "0.1.0"
 
