@@ -28,7 +28,7 @@ impl ThreadPool {
         let mut workers = Vec::with_capacity(size);
 
         for id in 0..size {
-            workers.push(Worker::new(id));
+            workers.push(Worker::new(id, receiver));
         }
 
         Self { workers, sender }
@@ -42,8 +42,10 @@ impl ThreadPool {
 }
 
 impl Worker {
-    fn new(id: usize) -> Self {
-        let thread = thread::spawn(|| {});
+    fn new(id: usize, receiver: mpsc::Receiver<Job>) -> Self {
+        let thread = thread::spawn(|| {
+            receiver;
+        });
 
         Self { id, thread }
     }
