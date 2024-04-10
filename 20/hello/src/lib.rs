@@ -1,5 +1,7 @@
 pub struct ThreadPool;
 
+pub struct PoolCreationError;
+
 impl ThreadPool {
     /// Create a new `ThreadPool`.
     ///
@@ -12,6 +14,14 @@ impl ThreadPool {
         assert!(size > 0);
 
         Self
+    }
+
+    pub fn build(size: usize) -> Result<Self, PoolCreationError> {
+        if size == 0 {
+            return Err(PoolCreationError);
+        }
+
+        Ok(Self)
     }
 
     pub fn execute<F>(&self, f: F)
