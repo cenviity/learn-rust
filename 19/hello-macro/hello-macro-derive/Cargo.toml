@@ -1,8 +1,5 @@
-[workspace]
-members = ["hello-macro-derive"]
-
 [package]
-name = "hello-macro"
+name = "hello-macro-derive"
 version = "0.1.0"
 edition = "2021"
 
